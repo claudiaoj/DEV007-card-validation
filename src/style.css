@@ -1,0 +1,83 @@
+body {
+    background-color: whitesmoke;
+    /*background-image: url(img/gp.jpeg); No se si agregarla*/
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: wheat;
+    background-color: #454545;
+    /*border: 2px solid black;*/
+    padding: 30px 100px 20px 100px;
+}
+
+button {
+    color: white;
+    background-color: #454545;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: medium;
+
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: #454545;
+
+}
+
+img {
+    width: 100px;
+
+}
+
+section {
+    padding: 10px;
+    color: #02395D;
+}
+
+footer{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+
+.formato {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: #FFE6C7;
+    margin: 20px 400px 20px 400px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(81, 7, 96);
+}
+
+.leyenda{
+    font-size: 20px;
+    
+}
+.navegador{
+    border: 2px solid black;
+    background-color: #FFA559;
+}
+
+#numTarjeta{
+    width: 50%;
+    
+}
+
+#nomTarjeta{
+    width: 50%;
+}
+
+#fechaVencimiento{
+    width: 15%;
+}
+
+#codigocvv{
+    width: 15%;
+    
+}
