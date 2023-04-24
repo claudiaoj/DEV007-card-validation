@@ -47,8 +47,6 @@ El objetivo principal es que el usuario pueda realizar la validación de su tarj
   
   <img src="/images/interfaz.png" >
 
-  ![image](https://user-images.githubusercontent.com/129541400/233708745-3be9c637-56a3-434c-bb6c-baadd26bec61.png)
-
   
 ## 4. Demo
 
