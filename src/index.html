@@ -4,75 +4,69 @@
   <head>
     <meta charset="UTF-8">
     <title>Tarjeta de crédito válida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   
   </head>
   
-  <body>
-  
+  <body class="fondo">
+
     <header>
-      <h1>PetFriends Tienda</h1>
+      <h1>The Best Pet Shop</h1>
     </header>
+
+      <div class="nav-bg">
+        <nav class="navegador contenedor">
+          <a href="#">Inicio</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Tipos de Alimentos</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </div>
   
-    <nav class="navegador">
-      <a href="">Inicio</a>
-      <a href="">Nosotros</a>
-      <a href="">Alimentos</a>
-      <a href="">Contacto</a>
-    </nav>
+    <main>
   
-    <main class="contenedor">
-  
-      <img src="" alt="">
-  
-      <form class="formato">
+      <form class="formulario">
   
         <fieldset>
               <legend class="leyenda">Complete los Datos de Pago</legend>
   
-          <section class="uno-num">
-            <label for="numTarjeta"> Número Tarjeta de Crédito:</label><br>
-            <input type="number" id="numTarjeta" name="numTarjeta" placeholder="Colocar numero tarjeta" required>
-            <br>
-          </section>
+          <div class="contenedor-campos">
+            <section class="campos">
+              <label for="numTarjeta"> Número Tarjeta de Crédito:</label><br>
+              <input type="number" id="numTarjeta" name="numTarjeta" onkeypress="if (this.value.length > 15) return false" placeholder="Colocar número tarjeta" required>
+              <br>
+            </section>
+            <section class="campos">
+              <label for="nomTarjeta"> Nombre Tarjeta de Crédito:</label><br>
+              <input type="text" id="nomTarjeta" name="nomTarjeta" placeholder="Colocar nombre tarjeta" >
+              <br>
+            </section>
+            <section class="campos">
+              <label for="fechaVencimiento"> Fecha de Vencimiento:</label><br>
+              <input type="number" id="fecha-mes" name="mesVencimiento" onkeypress="if (this.value.length > 1) return false" placeholder="Mes" >
+              <span> / </span>
+              <input type="number" id="fecha-año" name="añoVencimiento" onkeypress="if (this.value.length > 1) return false" placeholder="Año" ><br>
+            </section>
+            <section class="campos">
+              <label for="codigocvv"> CVV:</label><br>
+              <input type="number" id="codigocvv" name="codigocvv" onkeypress="if (this.value.length > 2) return false" placeholder="NºCVV" ><br>
+              <br>
+            </section>
+          </div>
   
-          <!--<section class="uno-nom">
-            <label for="nomTarjeta"> Nombre Tarjeta de Crédito:</label><br>
-            <input type="text" id="nomTarjeta" name="nomTarjeta" placeholder="Colocar nombre tarjeta" >
-            <br>
+          <section class="alinear">
+            <button class="boton" type="submit" id="pago" >Pagar</button>
           </section>
-  
-          <section class="uno-fecha">
-            <label for="fechaVencimiento"> Fecha de Vencimiento:</label><br>
-            <input type="number" id="fechaVencimiento" name="mesVencimiento" placeholder="mes" >
-            <span> / </span>
-            <input type="number" id="fechaVencimiento" name="anoVencimiento" placeholder="año" ><br>
-          </section>
-  
-          <section class="uno-cvv">
-            <label for="codigocvv"> CVV:</label><br>
-            <input type="number" id="codigocvv" maxlength="3" name="codigocvv" placeholder="NºCVV" ><br>
-            <br>
-          </section>
-  
-          <br>
-  
-          <section>
-            <button type="submit" id="pago" >Pagar</button>
-          </section>
+
         </fieldset>
   
             <section>
-              <img src="img/visa.png" alt="visa">
-              <img src="img/mastercard.png" alt="mastercard">
-              <img src="img/amex-logo-antes.jpeg" alt="american">
-            </section>-->
+              <img class="img-form" src="#" alt="">
+            </section>
   
       </form>
-  
-      <section>
-        <button type="submit" id="pago">Pagar</button>
-      </section>
+      <img class="animales" src="#" alt="">
   
     </main>
   
