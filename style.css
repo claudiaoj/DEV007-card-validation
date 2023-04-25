@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+    font-family: 'Krub', sans-serif;
+    margin: 10px;
+    padding-bottom: 30px;
+}
+
+.fondo{
+    background-image: url(img/gp.jpeg);
+    background-repeat:repeat-x;
+    background-position: bottom;
+    z-index: -1;/* asegura que la imagen esté detrás del contenido */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: wheat;
+    background-color: #454545;
+    /*border: 2px solid black;*/
+    padding: 30px 50px 20px 50px;
+    margin: 20px 0;
+}
+
+button {
+    color: white;
+    background-color: #454545;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 30px;
+    width: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid gray;
+    color: #454545;
+    
+}
+
+img{
+    width: 100px;
+    padding: 10px 10px;
+    border: 1px;
+}
+
+footer{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.navegador{
+    display: flex;
+    justify-content:space-around;  /*elementos dentro del contenedor flexible se distribuirán equitativamente*/
+    background-color: #FFA559;
+}
+
+.navegador a {
+    color: #ffffff;
+    text-decoration: none;  /*Elimina linea subrayada*/
+    font-weight: bold;
+    font-size: 17px;
+    padding: 1rem;
+}
+
+.navegador a:hover {
+    background-color: #454545;
+    color: wheat;
+}
+
+
+fieldset{
+    border: none;
+    padding: 20px;  /*separación con num tarj*/
+}
+
+.formulario {
+    font-size: 15px;
+    background-color: #FFE6C7;
+    margin: 10px 500px 10px 500px;
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 3rem;
+}
+
+.leyenda{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;   /*letras mayusculas*/
+    color: #454545;
+    margin: 1.2rem;
+    text-align: center;
+}
+
+label{
+    color: #454545;
+    font-weight: bold;
+}
+
+.campos input{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+}
+
+#fecha-mes{
+    width: 105px;
+}
+
+#fecha-año{
+    width: 105px;
+}
+
+input[type=number]::-webkit-inner-spin-button,   /*quitar la flecha de los input*/
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

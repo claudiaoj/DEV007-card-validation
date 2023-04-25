@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Tarjeta de crédito válida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  
+  </head>
+  
+  <body class="fondo">
+
+    <header>
+      <h1>The Best Pet Shop</h1>
+    </header>
+
+      <div class="nav-bg">
+        <nav class="navegador contenedor">
+          <a href="#">Inicio</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Tipos de Alimentos</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </div>
+  
+    <main>
+  
+      <form class="formulario">
+  
+        <fieldset>
+              <legend class="leyenda">Complete los Datos de Pago</legend>
+  
+          <div class="contenedor-campos">
+            <section class="campos">
+              <label for="numTarjeta"> Número Tarjeta de Crédito:</label><br>
+              <input type="number" id="numTarjeta" name="numTarjeta" onkeypress="if (this.value.length > 15) return false" placeholder="Colocar número tarjeta" required>
+              <br>
+            </section>
+            <section class="campos">
+              <label for="nomTarjeta"> Nombre Tarjeta de Crédito:</label><br>
+              <input type="text" id="nomTarjeta" name="nomTarjeta" placeholder="Colocar nombre tarjeta" >
+              <br>
+            </section>
+            <section class="campos">
+              <label for="fechaVencimiento"> Fecha de Vencimiento:</label><br>
+              <input type="number" id="fecha-mes" name="mesVencimiento" onkeypress="if (this.value.length > 1) return false" placeholder="Mes" >
+              <span> / </span>
+              <input type="number" id="fecha-año" name="añoVencimiento" onkeypress="if (this.value.length > 1) return false" placeholder="Año" ><br>
+            </section>
+            <section class="campos">
+              <label for="codigocvv"> CVV:</label><br>
+              <input type="number" id="codigocvv" name="codigocvv" onkeypress="if (this.value.length > 2) return false" placeholder="NºCVV" ><br>
+              <br>
+            </section>
+          </div>
+  
+          <section class="alinear">
+            <button class="boton" type="submit" id="pago" >Pagar</button>
+          </section>
+
+        </fieldset>
+  
+            <section>
+              <img class="img-form" src="#" alt="">
+            </section>
+  
+      </form>
+      <img class="animales" src="#" alt="">
+  
+    </main>
+  
+  <footer>LABORATORIA DEV-007</footer>
+  
+    <script src="index.js" type="module"></script>
+  
+  
+  </body>
+</html>
+
