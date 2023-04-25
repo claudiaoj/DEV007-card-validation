@@ -8,9 +8,9 @@ function obtenerNumeroTarjeta(e) {
 
   const numeroIngresado = document.getElementById("numTarjeta").value;    //Obtener el valor del input donde el usuario ingresa el número de tarjeta.
   
-  if (numeroIngresado.trim() === '') {                       //Validar que el input no este vacio. Si esta vacio, muestra la alerta y termina con un return. 
-    alert("Ingrese un número de tarjeta de crédito");   //Trim() se usa para eliminar los espacios en blanco del número ingresado y 
-    return;                                                   //Luego compara el resultado con una cadena vacía ('') utilizando el operador de igualdad estricta (===) 
+  if (numeroIngresado.trim() === '') {                       //Validar que el input no este vacio. 
+    alert("Ingrese un número de tarjeta de crédito");   //Trim() elimina espacios en blanco y compara el resultado con una cadena vacía ('') usando (===).
+    return;                                                     
 
   }
   
@@ -23,7 +23,7 @@ function obtenerNumeroTarjeta(e) {
   
   const numFinal = validator.maskify(numeroIngresado, { mostrarUltimosNumeros: 4 });   //Enmascarar el número de tarjeta utilizando la función maskify del módulo validator y muestra solo los últimos 4 dígitos
   alert("Número de tarjeta: " + numFinal);
-  
+
 }
 
 
