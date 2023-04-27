@@ -9,7 +9,7 @@ function obtenerNumeroTarjeta(e) {
   const numeroIngresado = document.getElementById("numTarjeta").value;    //Obtener el valor del input donde el usuario ingresa el número de tarjeta.
   
   if (numeroIngresado.trim() === '') {                       //Validar que el input no este vacio. 
-    alert("Ingrese un número de tarjeta de crédito");   //Trim() elimina espacios en blanco y compara el resultado con una cadena vacía ('') usando (===).
+    alert("Ingrese un número de tarjeta de crédito");        //Trim() elimina espacios en blanco y compara el resultado con una cadena vacía ('') usando (===).
     return;                                                     
 
   }
