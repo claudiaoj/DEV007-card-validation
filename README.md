@@ -66,7 +66,9 @@ El objetivo principal es que el usuario pueda realizar la validación de su tarj
   
 ## 4. Demo
 
-https://user-images.githubusercontent.com/129541400/234417126-8a6534ec-b7b8-4738-8597-942e74b07e56.MOV
+
+https://user-images.githubusercontent.com/129541400/234734695-1993b5ba-94a0-4017-a234-46d4fb1492d2.mov
+
 
 
 
