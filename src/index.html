@@ -15,23 +15,20 @@
       <h1>The Best Pet Shop</h1>
     </header>
 
-      <div class="nav-bg">
-        <nav class="navegador contenedor">
+        <nav class="navegador">
           <a href="#">Inicio</a>
           <a href="#">Nosotros</a>
           <a href="#">Tipos de Alimentos</a>
           <a href="#">Contacto</a>
         </nav>
-      </div>
   
     <main>
   
       <form class="formulario">
   
         <fieldset>
-              <legend class="leyenda">Complete los Datos de Pago</legend>
+          <legend class="leyenda">Complete los Datos de Pago</legend>
   
-          <div class="contenedor-campos">
             <section class="campos">
               <label for="numTarjeta"> Número Tarjeta de Crédito:</label><br>
               <input type="number" id="numTarjeta" name="numTarjeta" onkeypress="if (this.value.length > 15) return false" placeholder="Colocar número tarjeta" required>
@@ -53,20 +50,14 @@
               <input type="number" id="codigocvv" name="codigocvv" onkeypress="if (this.value.length > 2) return false" placeholder="NºCVV" ><br>
               <br>
             </section>
-          </div>
-  
-          <section class="alinear">
-            <button class="boton" type="submit" id="pago" >Pagar</button>
-          </section>
+
+            <section class="alinear">
+              <button class="boton" type="submit" id="pago" >Pagar</button>
+            </section>
 
         </fieldset>
-  
-            <section>
-              <img class="img-form" src="#" alt="">
-            </section>
-  
+
       </form>
-      <img class="animales" src="#" alt="">
   
     </main>
   
