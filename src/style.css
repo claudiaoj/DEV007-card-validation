@@ -1,17 +1,19 @@
+/*Selector de tipo*/
 body {
     background-color: white;
     font-family: 'Krub', sans-serif;
     margin: 10px;
-    /*padding-bottom: 30px;*/
 }
 
+/*Selector de clase (body)*/
 .fondo{
     background-image: url(img/gp.jpeg);
     background-repeat:repeat-x;
     background-position: bottom;
-    z-index: -1;/* asegura que la imagen esté detrás del contenido */
+    z-index: -1;  /* asegura que la imagen esté detrás del contenido */
 }
 
+/*Selector de tipo*/
 h1 {
     text-align: center;
     font-size: 2rem;
@@ -22,6 +24,76 @@ h1 {
     margin: 20px 0;
 }
 
+/*Selector de clase (nav)*/
+.navegador{
+    display: flex;                /*Comportamiento de un elemento: Conteneder flexible*/
+    justify-content:space-around;  /*elementos se distribuirán equitativamente*/
+    background-color: #FFA559;
+}
+
+/*Selector de descendientes: toma el elemento a que es descendiente de .navegador */
+.navegador a {               
+    color: #ffffff;
+    text-decoration: none;  /*Elimina linea subrayada*/
+    font-weight: bold;
+    font-size: 17px;
+    padding: 1rem;
+}
+
+/*Pseudoclase: */
+.navegador a:hover {
+    background-color: #454545;
+    color: wheat;
+}
+
+/*Selector de clase (form)*/
+.formulario {
+    font-size: 15px;
+    background-color: #FFE6C7;
+    margin: 10px 400px;
+    padding: 20px 50px;
+    border-radius: 3rem;
+}
+
+/*Selector de tipo*/
+fieldset {
+    border: none;   /*Elimina el borde*/
+    padding: 30px;  
+    text-align: center;
+}
+
+/*Selector de clase (legend)*/
+.leyenda{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;   /*letras mayusculas*/
+    color: #454545;
+}
+
+/*Selector de tipo*/
+label{
+    color: #454545;
+    font-weight: bold;
+}
+
+/*Selector de descendientes*/
+.campos input{     
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+}
+
+/*Selector de id*/
+#fecha-mes{
+    width: 29%;
+}
+
+#fecha-año{
+    width: 29%;
+}
+
+/*Selector de tipo*/
 button {
     color: white;
     background-color: #454545;
@@ -35,82 +107,23 @@ button {
     cursor: pointer;
 
 }
-
-button:hover {                 /*Pseudoclase*/
+/*Pseudoclase*/
+button:hover {
     background-color: transparent;
     border: 2px solid gray;
     color: #454545;
-    
+
 }
 
-footer{
+/*Selector de tipo*/
+footer {
     font-size: 20px;
     font-weight: bold;
     text-align: right;
 }
 
-.navegador{
-    display: flex;
-    justify-content:space-around;  /*elementos dentro del contenedor flexible se distribuirán equitativamente*/
-    background-color: #FFA559;
-}
-
-.navegador a {               /*Selec, descendientes*/
-    color: #ffffff;
-    text-decoration: none;  /*Elimina linea subrayada*/
-    font-weight: bold;
-    font-size: 17px;
-    padding: 1rem;
-}
-
-.navegador a:hover {
-    background-color: #454545;
-    color: wheat;
-}
-
-
-fieldset{
-    border: none;
-    padding: 30px; /*separación con num tarj*/
-    text-align: center;
-}
-
-.formulario {
-    font-size: 15px;
-    background-color: #FFE6C7;
-    margin: 10px 400px;
-    padding: 20px 50px;
-    border-radius: 3rem;
-}
-
-.leyenda{
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;   /*letras mayusculas*/
-    color: #454545;
-}
-
-label{
-    color: #454545;
-    font-weight: bold;
-}
-
-.campos input{      /*Selec, descendiente*/
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    width: 70%;
-}
-
-#fecha-mes{
-    width: 29%;
-}
-
-#fecha-año{
-    width: 29%;
-}
-
-input[type=number]::-webkit-inner-spin-button,   /*quitar la flecha de los input*/
+/*Pseudoelemento: quita la flecha de los input*/
+input[type=number]::-webkit-inner-spin-button,   
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
